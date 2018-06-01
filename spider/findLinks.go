@@ -14,9 +14,12 @@ func Run(url string) {
 		fmt.Fprintf(os.Stderr, "findLinks error: %v\n", err)
 	}
 	fmt.Println("超链接如下：")
-	for _, link := range links {
-		fmt.Println(link)
+	printFun := func(links []string) {
+		for _, link := range links {
+			fmt.Println(link)
+		}
 	}
+	printFun(links)
 	fmt.Fprintf(os.Stderr, "图片数量：%d\n", len(images))
 }
 
