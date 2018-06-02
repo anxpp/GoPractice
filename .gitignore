@@ -67,3 +67,4 @@ fabric.properties
 
 .gitignore
 /.idea/workspace.xml
+/.idea/
